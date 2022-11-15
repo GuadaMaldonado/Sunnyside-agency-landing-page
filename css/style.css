@@ -143,6 +143,36 @@ p,span{
 
 
 /* SECTION ABOUT */
+/* GRID SECTION ABOUT- SERVICIOS */
+.grid-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "egg"
+    "transform"
+    "cup"
+    "audience"
+    "graphic"
+    "photo";
+}
+.egg{
+    grid-area: egg;
+}
+.transform{
+    grid-area: transform;
+}
+.cup{
+    grid-area: cup;
+}
+.audience{
+    grid-area: audience;
+}
+.graphic{
+    grid-area: graphic;
+}
+.photo{
+    grid-area: photo;
+}
 
 .flex{
     padding: 4.375rem 1.875rem 4.063rem 1.875rem;
@@ -255,7 +285,12 @@ p,span{
     width: 4rem;
 }
 
+/* Seccion grid imagenes */
 
+.grid-imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 
