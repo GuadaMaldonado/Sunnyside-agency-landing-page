@@ -90,11 +90,11 @@ select {
   font: inherit;
 }
 
-h1, h2, button{
+h1, h2, h3, h4, button{
     font-family: var(--ff-heading);
     
 }
-p{
+p,span{
     font-family: var(--ff-paragraph);
     font-weight: var(--fw-regular);
 }
@@ -209,6 +209,50 @@ p{
 .photo p{
     color: var(--clr-primary-dark-blue);
     font-size: 1rem;
+}
+
+/* Testimonials */
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 4rem 1.8rem 4rem 1.8rem;
+}
+.testimonials h3{
+    color: var(--clr-gray-blue);
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .25rem;
+    padding-bottom: 1rem;
+    font-weight: var(--fw-semi-bold);
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: 1rem;
+}
+.testimonial-description{
+    font-size: 1rem;
+    color: var(--clr-neutral);
+    font-weight: var(--fw-regular);
+}
+.testimonial .name{
+    padding-top: 1rem;
+    color:var(--clr-neutral-dark)
+}
+.testimonial .oficio{
+    color: var(--clr-gray-blue);
+    font-size: .8rem;
+    line-height: .4rem;
+    
+}
+.testimonial img{
+    border-radius: 50%;
+    width: 4rem;
 }
 
 
