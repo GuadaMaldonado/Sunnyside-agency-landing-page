@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -14,12 +14,12 @@
   <header class="primary_header">
     <div class="primary_header_container">
       <a href="./index.html"><img class="logo-sunny" src="./images/logo.svg" alt="logo Sunnyside"></a>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <img class="icon-hamburger" src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
         <span class="visually-hidden">Menu</span>
       </button>
-      <nav class="primary-navigation">
-        <ul role="list" aria-label="Primary" id="primary-navigation" class="nav-list">
+      <nav class="primary-navigation" id="primary-navigation" >
+        <ul role="list" aria-label="Primary" class="nav-list">
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Proyects</a></li>
@@ -120,5 +120,6 @@
     </div>
   </footer>
 
+  <script src="./js/main.js"></script>
 </body>
 </html>

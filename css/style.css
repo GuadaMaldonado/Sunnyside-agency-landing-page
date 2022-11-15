@@ -143,6 +143,14 @@ p,span{
 @media (max-width: 50em){
     .primary-navigation{
         display: none;
+
+        position: fixed;
+       
+
+    }
+
+    .primary-navigation[data-visible] {
+        display: block;
     }
     .mobile-nav-toggle{
         display: block;
