@@ -13,15 +13,19 @@
 
   <header class="primary_header">
     <div class="primary_header_container">
-      <a href="./index.html"><img src="./images/logo.svg" alt="logo Sunnyside"></a>
+      <a href="./index.html"><img class="logo-sunny" src="./images/logo.svg" alt="logo Sunnyside"></a>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <img class="icon-hamburger" src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
+        <span class="visually-hidden">Menu</span>
+      </button>
       <nav class="primary-navigation">
-        <ul role="list" aria-label="Primary" class="nav-list">
+        <ul role="list" aria-label="Primary" id="primary-navigation" class="nav-list">
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Proyects</a></li>
         </ul>
       </nav>
-      <button class="button">Contact</button>
+      <button class="button" style="display: none;">Contact</button>
     </div>
     <div class="hero">
       <h1 class="hero_title">We are creatives</h1>
@@ -87,18 +91,18 @@
     </section>
   </main>
 
-  <footer>
-    <div>
+  <footer class="bg-footer">
+    <div class="footer-flex">
       <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
       <nav class="secondary-navigation">
-        <ul aria-label="Footer" role="list">
+        <ul class="nav-items" aria-label="Footer" role="list">
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Proyects</a></li>
         </ul>
       </nav>
-      <div>
-        <ul role="list" aria-label="social links">
+      <div class="container-icons">
+        <ul class="icons-flex" role="list" aria-label="social links">
           <li>
             <a aria-label="facebook" href="#"> <img src="./images/icon-facebook.svg" alt="Facebook"></a>
           </li>
