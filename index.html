@@ -40,7 +40,7 @@
       <div class="flex transform">
         <h2 class="section_about_title">Transform your brand</h2>
         <p class="section_about_description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a class="section_about_button" href="#">Learn more</a>
+        <a class="section_about_button transform-button" href="#">Learn more</a>
       </div>
       <div class="egg">
         <img src="./images/mobile/image-transform.jpg" alt="egg">
@@ -65,31 +65,52 @@
 
     <section class="testimonials">
       <h3>Client testimonials</h3>
-      <div class="testimonial">
-        <img src="./images/image-emily.jpg" alt="Emily">
-        <p class="testimonial-description">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <h4 class="name"> Emily R.</h4>
-        <span class="oficio">Marketing Director</span>
-      </div>
-      <div class="testimonial">
-        <img src="./images/image-thomas.jpg" alt="Thomas">
-        <p class="testimonial-description">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-        <h4 class="name"> Thomas S.</h4>
-        <span class="oficio">Chief Operating Officer</span>
-      </div>
-      <div class="testimonial">
-        <img src="./images/image-jennie.jpg" alt="Jennie">
-        <p class="testimonial-description">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <h4 class="name"> Jennie F.</h4>
-        <span class="oficio">Business Owner</span>
+      <div class="wrapper-testimonials">
+        <div class="testimonial">
+          <img src="./images/image-emily.jpg" alt="Emily">
+          <p class="testimonial-description">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="testimonial-info">
+            <h4 class="name"> Emily R.</h4>
+            <span class="oficio">Marketing Director</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/image-thomas.jpg" alt="Thomas">
+          <p class="testimonial-description">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="testimonial-info">
+            <h4 class="name"> Thomas S.</h4>
+            <span class="oficio">Chief Operating Officer</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/image-jennie.jpg" alt="Jennie">
+          <p class="testimonial-description">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="testimonial-info">
+            <h4 class="name"> Jennie F.</h4>
+            <span class="oficio">Business Owner</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="grid-imagenes">
-      <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
-      <img src="./images/mobile/image-gallery-orange.jpg" alt="orange">
-      <img src="./images/mobile/image-gallery-cone.jpg" alt="cone">
-      <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+      <picture>
+        <source srcset="./images/desktop/image-gallery-milkbottles.jpg" media="(min-width: 638px)">
+        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
+      </picture>
+
+      <picture>
+        <source srcset="./images/desktop/image-gallery-orange.jpg" media="(min-width: 638px)">
+        <img src="./images/mobile/image-gallery-orange.jpg" alt="orange">
+      </picture>
+      <picture>
+        <source srcset="./images/desktop/image-gallery-cone.jpg" media="(min-width: 638px)">
+        <img src="./images/mobile/image-gallery-cone.jpg" alt="cone">
+      </picture>
+      <picture>
+        <source srcset="./images/desktop/image-gallery-sugarcubes.jpg" media="(min-width: 638px)">
+        <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+      </picture>
     </section>
   </main>
 

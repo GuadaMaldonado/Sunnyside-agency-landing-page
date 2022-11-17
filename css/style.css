@@ -130,10 +130,10 @@ p,span{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 .logo-sunny{
-    width: 6rem;
+    width: 9rem;
 }
 
 /* navigation hamburger */
@@ -148,9 +148,30 @@ p,span{
     text-transform: uppercase;
     cursor: pointer;
 }
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.288);
+    color: var(--clr-neutral-white);
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+} 
+.nav-list a{
+    color: var(--clr-neutral-white);
+    font-family: var(--ff-paragraph);
+    font-size: var(--fs-600);
+}  
+.nav-list a:hover{
+    color: var(--clr-primary-yellow);
+}
 
 /* vista de menú en celular */
-@media (max-width: 50em){
+@media (max-width: 40em){
+    .primary_header_container{
+        padding: 1rem;
+    }
     .primary-navigation{
         display: none;
     /* cuadrado blanco al abrir menu */
@@ -172,7 +193,9 @@ p,span{
         top: -8%;
         right: 0;
     }
-
+    .logo-sunny{
+        width: 6rem;
+    }
     .nav-list{
         display: grid;
         gap: 1.3rem;
@@ -183,12 +206,15 @@ p,span{
         font-size: .9rem;
         font-family: var(--ff-paragraph);
     }
-    .nav-list a:hover{
-        color: var(--clr-primary-yellow);
-    }
+
     .button{
         background-color: var(--clr-primary-yellow);
         color: var(--clr-neutral-dark);
+    }
+    .button:hover{
+        background-color: rgba(170, 169, 169, 0.219);
+        color: var(--clr-neutral-dark);
+        
     }
     .primary-navigation[data-visible] {
         display: block;
@@ -202,14 +228,6 @@ p,span{
 }
 
 
-/* .nav-list{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-} */
- /* .nav-list a{
-    color: var(--clr-neutral-white);
-}  */
 
 .hero{
     margin: 1rem;
@@ -405,7 +423,9 @@ p,span{
     font-family: var(--ff-paragraph);
     font-size: .9rem;
     
-
+}
+.nav-items a:hover{
+    color: var(--clr-neutral-white);
 }
 .container-icons{
     padding-top: 3rem;
@@ -415,6 +435,74 @@ p,span{
     flex-direction: row;
     justify-content: space-between;
     gap: 1.5rem;
+}
+
+@media (min-width:638px){
+
+    .primary_header{
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 100vh;
+    }
+    .hero{
+        padding-top: 5rem;
+    }
+    .hero_title{
+        font-size: 3.5rem;
+        letter-spacing: .8rem;
+        padding-bottom: 3rem;
+    }
+
+    /* SECTION ABOUT */
+/* GRID SECTION ABOUT- SERVICIOS */
+    .grid-section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "transform  egg"
+        "cup        audience"
+        "graphic    photo";
+    }
+    .flex{
+        justify-content: center;
+        
+    }
+
+    /* testimonials */
+    .testimonials{
+        margin: 4rem ;
+        
+    }
+    .testimonial{
+        gap: 2rem;
+    }
+    .testimonials h3{
+        font-size: 1.4rem;
+    }
+    .testimonial-description{
+        font-size: var(--fs-600);
+        line-height: 2rem;
+        padding-top: 1.5rem;
+    }
+    .testimonial-info .name{
+        font-size: var(--fs-600);
+    }
+    .testimonial-info .oficio{
+        font-size: .9rem;
+    }
+    .testimonial img{
+        width: 5rem;
+    }
+    .wrapper-testimonials{
+        display: flex;
+        flex-direction: row;
+        padding: 0rem 3rem 2rem 3rem;
+        gap: 2rem;
+
+    }
+    /* Seccion grid imagenes */
+    .grid-imagenes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 
