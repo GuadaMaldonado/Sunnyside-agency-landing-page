@@ -20,9 +20,9 @@
       </button>
       <nav class="primary-navigation" id="primary-navigation" >
         <ul role="list" aria-label="Primary" class="nav-list">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li>
             <button class="button">Contact</button>
           </li>
@@ -36,14 +36,17 @@
   </header>
 
   <main>
-    <section class="section_about grid-section">
+    <section id="about" class="section_about grid-section">
       <div class="flex transform">
         <h2 class="section_about_title">Transform your brand</h2>
         <p class="section_about_description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a class="section_about_button transform-button" href="#">Learn more</a>
       </div>
       <div class="egg">
-        <img src="./images/mobile/image-transform.jpg" alt="egg">
+        <picture>
+          <source srcset="./images/desktop/image-transform.jpg" media="(min-width: 638px)">
+          <img src="./images/mobile/image-transform.jpg" alt="egg">
+        </picture>
       </div>
       <div class="flex audience">
         <h2 class="section_about_title">Stand out to the right audience</h2>
@@ -51,15 +54,22 @@
         <a class="section_about_button" href="#">Learn more</a>
       </div>
       <div class="cup">
-        <img src="./images/mobile/image-stand-out.jpg" alt="">
+        <picture>
+          <source srcset="./images/desktop/image-stand-out.jpg" media="(min-width: 638px)">
+          <img src="./images/mobile/image-stand-out.jpg" alt="">
+        </picture>
       </div>
-      <div class="section_servicios graphic">
-        <h2 class="section_servicios_title"> Graphic Design</h2>
-        <p class="section_servicios_description"> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      <div id="services" class="section_servicios graphic">
+        <div class="wrapper_servicios">
+          <h2 class="section_servicios_title"> Graphic Design</h2>
+          <p class="section_servicios_description"> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
       </div>
       <div class="section_servicios photo">
-        <h2 class="section_servicios_title"> Photography</h2>
-        <p class="section_servicios_description"> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        <div class="wrapper_servicios">
+          <h2 class="section_servicios_title"> Photography</h2>
+          <p class="section_servicios_description"> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
       </div>
     </section>
 
@@ -93,7 +103,7 @@
       </div>
     </section>
 
-    <section class="grid-imagenes">
+    <section id="projects" class="grid-imagenes">
       <picture>
         <source srcset="./images/desktop/image-gallery-milkbottles.jpg" media="(min-width: 638px)">
         <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
@@ -119,9 +129,9 @@
       <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
       <nav class="secondary-navigation">
         <ul class="nav-items" aria-label="Footer" role="list">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Proyects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
       <div class="container-icons">
